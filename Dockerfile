@@ -2,4 +2,5 @@ FROM java:8
 WORKDIR /
 ADD sample.war sample.war
 EXPOSE 5000
-CMD java - jar sample.war
+CMD /bin/bash -c "java -jar sample.war"
+
